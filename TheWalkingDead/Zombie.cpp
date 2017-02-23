@@ -8,7 +8,7 @@ Zombie::Zombie(int t_distanceToPlayer, float t_speed, float t_damage, int t_life
 {
 	t_distanceToPlayer = rand() % 20, 200.0;
 	t_speed = rand() % 0, 20.0;
-	t_damage = rand() % 0, 20.0;
+	t_damage = rand() % 0, 5.0;
 	t_life = rand() % 100;
 
 }

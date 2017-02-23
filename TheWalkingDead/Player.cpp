@@ -17,40 +17,11 @@ Player::Player()
 
 Player::Player(Weapon t_weapon, float t_precision, int t_life)
 {
-	t_precision = rand() % 0,1.0;
-	t_life = rand() % 0,100;
-	int arma = rand() % 6;
-
-	switch (arma)
-	{
-	case 0:
-		t_weapon = FISTS;
-		break;
-	case 1:
-		t_weapon = GUN;
-		break;
-	case 2:
-		t_weapon = SHOTGUN;
-		break;
-	case 3:
-		t_weapon = REVOLVER;
-		break;
-	case 4:
-		t_weapon = SNIPER;
-		break;
-	case 5:
-		t_weapon = MACHINE_GUN;
-		break;
-	case 6:
-		t_weapon = MAX;
-		break;
-	default:
-		break;
-	}
-
-	this->wep = t_weapon;
 	this->precision = t_precision;
+	this->wep = t_weapon;
 	this->life = t_life;
+
+	
 }
 void Player::attack(Zombie &z)
 {
@@ -78,6 +49,7 @@ void Player::attack(Zombie &z)
 		
 		break;
 	default:
+		break;
 	}
 }
 

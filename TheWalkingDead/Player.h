@@ -6,13 +6,14 @@ class Zombie;
 class Player
 {
 private:
-	enum Weapon { FISTS, GUN, SHOTGUN, REVOLVER, SNIPER, MACHINE_GUN, MAX };
+	
 	
 	float precision;
 	int life;
 public:
+	enum Weapon { FISTS, GUN, SHOTGUN, REVOLVER, SNIPER, MACHINE_GUN, MAX };
 	Weapon wep;
-
+	void setWeapon(Weapon w) { this->wep = w; }
 	Weapon GetWeapon() { return wep; }
 	void setPrecision(float precision) { this->precision = precision; }
 	float getPrecision() { return precision; }
